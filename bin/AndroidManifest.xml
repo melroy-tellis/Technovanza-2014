@@ -7,7 +7,8 @@
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="19" />
-
+<uses-permission android:name="android.permission.INTERNET"/>
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -17,11 +18,37 @@
             android:name="org.technovanza.technovanza14.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="org.technovanza.technovanza14.loginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        
+        
+        <activity
+            android:name="org.technovanza.technovanza14.signup"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOGIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        
+        
     </application>
 
 </manifest>
