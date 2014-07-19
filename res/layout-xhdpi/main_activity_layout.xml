@@ -9,57 +9,57 @@
     
     <FrameLayout 
     	    	android:id="@+id/frag1"
-    	    	android:layout_marginLeft="10dp"
-    	    	android:layout_marginRight="10dp"
-    	    	android:layout_marginBottom="10dp"
+    	    	android:layout_marginLeft="5dp"
+    	    	android:layout_marginRight="5dp"
+    	    	android:layout_marginBottom="5dp"
     	    	android:layout_alignParentLeft="true"
             	android:layout_alignParentTop="true"
-            	android:layout_width="220dp"
+            	android:layout_width="170dp"
             	android:layout_height="220dp" >
     </FrameLayout>       	
             	    
     <FrameLayout 
     	    	android:id="@+id/frag2"
-    	    	android:layout_marginLeft="10dp"
-    	    	android:layout_marginRight="10dp"
-    	    	android:layout_marginBottom="10dp"
+    	    	android:layout_marginLeft="5dp"
+    	    	android:layout_marginRight="5dp"
+    	    	android:layout_marginBottom="5dp"
     	    	android:layout_alignParentRight="true"
             	android:layout_alignParentTop="true"
-            	android:layout_width="220dp"
+            	android:layout_width="170dp"
             	android:layout_height="220dp" >
     </FrameLayout>
     
     <FrameLayout 
     	    	android:id="@+id/frag3"
-    	    	android:layout_margin="10dp"
+    	    	android:layout_margin="5dp"
             	android:layout_below="@id/frag1"
             	android:layout_alignParentLeft="true"
-            	android:layout_width="220dp"
+            	android:layout_width="170dp"
             	android:layout_height="220dp" >
     </FrameLayout>
        	
   	<FrameLayout 
     	    	android:id="@+id/frag4"
-    	    	android:layout_margin="10dp"
+    	    	android:layout_margin="5dp"
             	android:layout_below="@id/frag2"
             	android:layout_alignParentRight="true"
-            	android:layout_width="220dp"
+            	android:layout_width="170dp"
             	android:layout_height="220dp" >
     </FrameLayout>
     <FrameLayout 
     	    	android:id="@+id/frag5"
-    	    	android:layout_margin="10dp"
+    	    	android:layout_margin="5dp"
             	android:layout_below="@id/frag3"
             	android:layout_alignParentLeft="true"
-            	android:layout_width="220dp"
+            	android:layout_width="170dp"
             	android:layout_height="220dp" >
     </FrameLayout>
     <FrameLayout 
     	    	android:id="@+id/frag6"
-    	    	android:layout_margin="10dp"
+    	    	android:layout_margin="5dp"
             	android:layout_below="@id/frag4"
             	android:layout_alignParentRight="true"
-            	android:layout_width="220dp"
+            	android:layout_width="170dp"
             	android:layout_height="220dp" >
     </FrameLayout>
     

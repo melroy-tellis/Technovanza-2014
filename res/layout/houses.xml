@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<LinearLayout
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:id="@+id/slideshow_layout"
+  >
+    <TextView android:text="Technovanza ‘s House Cup will consist of 3 houses and 12 branches with 4 branches in each house. The three houses that will be fight for the House Cup are:-" 
+              android:id="@+id/new1" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content"
+              android:textStyle="bold"
+              ></TextView>
+   <ImageView android:id="@+id/new2"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              ></ImageView>
+   <TextView  
+              android:id="@+id/new3" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content"
+              android:textStyle="bold"
+              ></TextView>         
+</LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/back2"
+    >
+<TextView 
+    android:id = "@+id/bctv1"
+    android:text="The House with maximum coins on the last day of Technovanza,that is, 30th of December, 2013 will be HOUSE OF TECHNOVANZA for the year 2013-14."
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:textStyle="bold"			  
+    />  
+<TextView 
+    android:id = "@+id/bctv2"
+    android:text = "The various Opportunities to raise your Basket Levels are:"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    />
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="1dp"
+    android:showDividers="beginning|middle|end" >
+
+<TableRow >
+ 	<TextView 
+ 	    android:width = "60dp"
+ 	    />
+ 	<TextView 
+ 	    android:width = "210dp"
+ 	    />
+</TableRow>
+<TableRow >
+ 	<TextView 
+ 	    android:text = "Tech-Buzz"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+ 	<TextView 
+ 	    android:text = "Maximum 32000 coins"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+</TableRow>
+<TableRow >
+ 	<TextView 
+ 	    android:text = "Techno-Tuesday"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+ 	<TextView 
+ 	    android:text = "1800 coins+Participation coins"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+</TableRow>
+<TableRow >
+ 	<TextView 
+ 	    android:text = "Tagline"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+ 	<TextView 
+ 	    android:text = "600+ coins"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+</TableRow>
+<TableRow >
+ 	<TextView/>
+ 	<TextView/>
+</TableRow>
+</TableLayout>
+<TextView 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:text = "Technovanza Events"
+    android:textStyle="bold"
+    android:textColor="@color/abs__primary_text_holo_dark"
+    />
+<TextView 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:text = "Each sector may add up sufficient coins into your basket to make you rich. The maximum coins that may add up to your House from each sector is as follows:"
+    android:textStyle="bold"
+    />
+<TableLayout
+android:layout_height="fill_parent"
+android:layout_width="fill_parent"
+>
+<TableRow >
+ 	<TextView 
+ 	    android:width = "55dp"
+ 	    />
+ 	<TextView 
+ 	    android:width = "210dp"
+ 	    />
+ 	
+</TableRow>
+<TableRow >
+ 	<TextView 
+ 	    android:text = "Autobots"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+ 	<TextView 
+ 	    android:text = "12100 coins+Participation coins"
+ 		android:textStyle="bold"
+ 		android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+</TableRow>
+<TableRow >
+ 	<TextView 
+ 	    android:text = "I-mech"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+ 	<TextView 
+ 	    android:text = "4800 coins+Participation coins"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+</TableRow>
+<TableRow >
+ 	<TextView 
+ 	    android:text = "I-build"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+ 	<TextView 
+ 	    android:text = "1300 coins+Participation coins"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+</TableRow>
+<TableRow >
+ 	<TextView 
+ 	    android:text = "I-code"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+ 	<TextView 
+ 	    android:text = "4300 coins+Participation coins"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+</TableRow>
+<TableRow >
+ 	<TextView 
+ 	    android:text = "Online"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+ 	<TextView 
+ 	    android:text = "600 coins+Participation coins"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+</TableRow>
+<TableRow >
+ 	<TextView 
+ 	    android:text = "Manageria"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+ 	<TextView 
+ 	    android:text = "13000 coins+Participation coins"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+</TableRow>
+<TableRow >
+ 	<TextView 
+ 	    android:text = "Eureka"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+ 	<TextView 
+ 	    android:text = "6000 coins+Participation coins"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+</TableRow>
+<TableRow >
+ 	<TextView 
+ 	    android:text = "Impulse"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+ 	<TextView 
+ 	    android:text = "700 coins+Participation coins"
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/abs__primary_text_holo_dark"
+ 	    />
+</TableRow>
+<TableRow >
+ 	<TextView />
+ 	<TextView/>
+</TableRow>
+</TableLayout>
+<TextView 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:text = "So start collecting your coins and thus tend to infinity and fill your basket to raise the HOUSE CUP OF TECHNOVANZA. Will this integration of branches bring glory to your house?"
+    android:textStyle="bold"
+    />
+<TextView 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:text = "Cash prizes worth 5,00,000 INR to be won by participants."
+    android:textStyle="bold"
+    android:textColor="@color/abs__primary_text_holo_dark"
+    />
+<TextView 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:text = "Cash prizes of 6000 INR by Department Heads."
+    android:textStyle="bold"
+    android:textColor="@color/abs__primary_text_holo_dark"
+    />
+<TableLayout
+android:layout_height="fill_parent"
+android:layout_width="fill_parent"
+>
+<TableRow >
+ 	<TextView 
+ 	    android:width = "100dp"
+ 	    />
+ 	<TextView 
+ 	    android:width = "100dp"
+ 	    />
+ 	
+</TableRow>
+<TableRow >
+ 	<TextView 
+ 	    android:text = "For Queries, Contact:"
+ 	    android:textStyle="bold"
+ 	    />
+ 	<TextView/>
+</TableRow>
+<TableRow >
+ 	<TextView 
+ 	    android:text = "Shweta Chaudhari:"
+ 	    android:textStyle="bold"
+ 	    />
+ 	<TextView 
+ 	    android:text = "+91 9029778701"
+ 	    android:textStyle="bold"
+ 	    />
+</TableRow>
+<TableRow >
+ 	<TextView 
+ 	    android:text = "Tejal Mahore:"
+ 	    android:textStyle="bold"
+ 	    />
+ 	<TextView 
+ 	    android:text = "+91 9757101020"
+ 	    android:textStyle="bold"
+ 	    />
+</TableRow>
+<TableRow >
+ 	<TextView 
+ 	    android:text = "Pooja Rodolla:"
+ 	    android:textStyle="bold"
+ 	    />
+ 	<TextView 
+ 	    android:text = "+91 9930408555"
+ 	    android:textStyle="bold"
+ 	    />
+</TableRow>
+</TableLayout>
+</LinearLayout>
+</ScrollView>
