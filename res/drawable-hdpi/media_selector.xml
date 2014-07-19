@@ -4,7 +4,7 @@
         android:state_pressed="true"
         android:drawable="@drawable/media_inset" >
      </item>
-     <item android:drawable="@drawable/media">
+     <item android:drawable="@drawable/gallery">
      </item> 
 
 </selector>

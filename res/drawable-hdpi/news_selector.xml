@@ -5,7 +5,7 @@
         android:drawable="@drawable/news_inset" >
      </item>
      <item
-         android:drawable="@drawable/news">
+         android:drawable="@drawable/twitter">
      </item> 
 
 </selector>

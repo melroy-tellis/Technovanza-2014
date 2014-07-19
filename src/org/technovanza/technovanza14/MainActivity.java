@@ -4,17 +4,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.app.Activity;
 
-
 public class MainActivity extends Activity   {
 		
-	static final int typeEventsFragment=0,typeMediaFragment=1,typeNewsFragment=2,typeAboutFragment=3 ;
-	
 	TechnoTileFragment mEventsFragment=TechnoTileFragment.newTechnoTileFragmentInstance(TechnoTileFragment.typeEventsFragment);
-	TechnoTileFragment mMediaFragment=TechnoTileFragment.newTechnoTileFragmentInstance(TechnoTileFragment.typeMediaFragment);
-	TechnoTileFragment mNewsFragment=TechnoTileFragment.newTechnoTileFragmentInstance(TechnoTileFragment.typeNewsFragment);
+	TechnoTileFragment mGalleryFragment=TechnoTileFragment.newTechnoTileFragmentInstance(TechnoTileFragment.typeGalleryFragment);
+	TechnoTileFragment mTwitterFragment=TechnoTileFragment.newTechnoTileFragmentInstance(TechnoTileFragment.typeTwitterFragment);
+	TechnoTileFragment mHousecupFragment=TechnoTileFragment.newTechnoTileFragmentInstance(TechnoTileFragment.typeHousecupFragment);
+	TechnoTileFragment mFacebookFragment=TechnoTileFragment.newTechnoTileFragmentInstance(TechnoTileFragment.typeFacebookFragment);
 	TechnoTileFragment mAboutFragment=TechnoTileFragment.newTechnoTileFragmentInstance(TechnoTileFragment.typeAboutFragment);
 	
-	int mEventsFragContainer,mMediaFragContainer,mNewsFragContainer,mAboutFragContainer ;  
+	int mEventsFragContainer,mGalleryFragContainer,mHousecupFragContainer,mTwitterFragContainer,mFacebookFragContainer,mAboutFragContainer ;  
 	
 
 	@Override
@@ -23,11 +22,13 @@ public class MainActivity extends Activity   {
 		setContentView(R.layout.main_activity_layout);
 		
 		mEventsFragContainer=R.id.frag1;
-		mMediaFragContainer=R.id.frag2;
-		mNewsFragContainer=R.id.frag3;
-		mAboutFragContainer=R.id.frag4 ;
+		mGalleryFragContainer=R.id.frag2;
+		mHousecupFragContainer=R.id.frag3;
+		mTwitterFragContainer=R.id.frag4 ;
+		mFacebookFragContainer=R.id.frag5 ;
+		mAboutFragContainer=R.id.frag6 ;
 		
-		getFragmentManager().beginTransaction().add(mEventsFragContainer, mEventsFragment).add(mMediaFragContainer, mMediaFragment).add(mNewsFragContainer, mNewsFragment).add(mAboutFragContainer, mAboutFragment).commit();
+		getFragmentManager().beginTransaction().add(mEventsFragContainer, mEventsFragment).add(mGalleryFragContainer, mGalleryFragment).add(mHousecupFragContainer, mHousecupFragment).add(mTwitterFragContainer, mTwitterFragment).add(mFacebookFragContainer, mFacebookFragment).add(mAboutFragContainer, mAboutFragment).commit();
 	}
 	
 	public void replaceFragment(View view, int draggedType ,int stationaryType)
@@ -50,10 +51,14 @@ public class MainActivity extends Activity   {
 		{
 			case TechnoTileFragment.typeEventsFragment:
 				return mEventsFragment;
-			case TechnoTileFragment.typeMediaFragment:
-				return mMediaFragment;
-			case TechnoTileFragment.typeNewsFragment:
-				return mNewsFragment;	
+			case TechnoTileFragment.typeGalleryFragment:
+				return mGalleryFragment;
+			case TechnoTileFragment.typeHousecupFragment:
+				return mHousecupFragment;
+			case TechnoTileFragment.typeTwitterFragment:
+				return mTwitterFragment;
+			case TechnoTileFragment.typeFacebookFragment:
+				return mFacebookFragment;	
 			default:	
 				return mAboutFragment;
 		}
@@ -66,10 +71,14 @@ public class MainActivity extends Activity   {
 		{
 			case TechnoTileFragment.typeEventsFragment:
 				return mEventsFragContainer;
-			case TechnoTileFragment.typeMediaFragment:
-				return mMediaFragContainer;
-			case TechnoTileFragment.typeNewsFragment:
-				return mNewsFragContainer;	
+			case TechnoTileFragment.typeGalleryFragment:
+				return mGalleryFragContainer;
+			case TechnoTileFragment.typeTwitterFragment:
+				return mTwitterFragContainer;
+			case TechnoTileFragment.typeFacebookFragment:
+				return mFacebookFragContainer;
+			case TechnoTileFragment.typeHousecupFragment:
+				return mHousecupFragContainer;	
 			default:	
 				return mAboutFragContainer;
 	
@@ -84,12 +93,18 @@ public class MainActivity extends Activity   {
 			case TechnoTileFragment.typeEventsFragment:
 				mEventsFragContainer = containerID ;
 				break;
-			case TechnoTileFragment.typeMediaFragment:
-				mMediaFragContainer = containerID;
+			case TechnoTileFragment.typeGalleryFragment:
+				mGalleryFragContainer = containerID;
 				break;
-			case TechnoTileFragment.typeNewsFragment:
-				mNewsFragContainer  = containerID;	
+			case TechnoTileFragment.typeHousecupFragment:
+				mHousecupFragContainer  = containerID;	
+				break;	
+			case TechnoTileFragment.typeTwitterFragment:
+				mTwitterFragContainer  = containerID;	
 				break;
+			case TechnoTileFragment.typeFacebookFragment:
+				mFacebookFragContainer  = containerID;	
+				break;	
 			default:	
 				mAboutFragContainer  = containerID;
 	

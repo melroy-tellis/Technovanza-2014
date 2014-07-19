@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--imech==================================================== -->
+		<string-array name="ClimbeRope">
+        <item >
+		
+		Here’s the rope to success! Can your bot climb it?? But here’s the twist 
+		a bot has to climb the rope using any hydraulic mechanism which could
+		be as simple as a syringe. \n
+		\nTEAM SPECIFICATION : \nA team may consist of a maximum of 4 participants. 
+		Students from different educational institutes can form a team.
+		\nCERTIFICATE POLICY: \n1. Certificate of appreciation/participation will be awarded to the all teams. And certificate of excellence will be given to top three teams. 
+		\n2. Disqualified teams will not be considered for any certificates. 
+		\nCash Prizes of 3000 INR to be won. Certificates will be given on the spot.
+		\nFREE Registrations for all events and non-commercial exhibitions.
+        </item>
+        <item> 
+ 				A team may consist of a maximum of 3 participants. Students from different colleges can form a team. 
+\nThe team that performs any acts that are not in the spirit of fair play or the team which fails to obey instructions or warnings will be disqualified. 
+
+\nFIRST ROUND: 
+\n1. The bot has to climb vertically upwards against gravity. 
+\n2. The bot must reach the top in least time. 
+
+\nSECOND ROUND: 
+\n1. The top five teams will compete against each another in a race format. 
+\n2. The race would be on an incined rope. 
+\n3. The team that reaches to the flag in least time wins. 
+  
+    	</item>
+		
+        <item >
+		GAME RULES: 
+\n1. The bot should be based on hydrolic mechanism only. 
+\n2. If the bot topples or falls from its path i.e.the rope,it will be allowed to take a restart but from starting the point. 
+\n3. However the timer will not stop. 
+\n4. The bot cannot be made up of any electrical devices or components e.g.motors. 
+\n5. If found using so, the team will be disqualified. 
+
+		</item>
+		
+        <item >Shubham Kathalkar \t+91 9665361191\n Tushar Rathod \t+91 9922592093</item>
+		
+		<item >specification,judging criteria,tutorials,and much more.... \n.on http://technovanza.org/climb-e-rope.php</item>
+    </string-array>
+    
+	 <string-array name="fastandfurious">
+        <item >
+            INTRODUCTION:\n
+ \nDesign the fastest and the shrewdest IC engine car and put on your set-belts to face a white-knuckling race through the roughest arena! From the makers of ‘Split-Second’ here’s another thrilling real time all-terrain racing competition, race the fast and the furious from across the nation! Let’s put your car-designing abilities and your car’s the strength, power and efficiency of to test. 
+\nTEAM SPECIFICATION :
+\nA team may consist of  maximum  5 participants. A team may have students from different educational institutes.
+\nCERTIFICATE POLICY: 
+\n1. Certificate of appreciation/participation will be awarded to all the teams and certificate of   excellence will be given to only the top three teams. 
+\n2. Disqualified teams will not be awarded certificates.
+\nCash Prize of 45,000 INR to be won.
+ \nCertificates will be given on the spot.
+\nFREE Registrations for all events and non-commercial exhibitions.
+
+            
+         </item>
+		 
+        <item> 
+ 			  
+			  Make a wireless remote controlled machine, powered by only an IC engine, which can race against other opponents on an off-road dirt track with many obstacles.
+\nTeams have to send their abstract of their robots for Fast AND Furious  with their Team name and Team Leader on operations@technovanza.org on or before 15th October, 2013.
+\nTeams also have to send the video of their working model on the above mail-id by 25th of December, 2013.
+    	</item>
+		
+		
+        <item >
+		\nQualifying round :-
+\n\t•	 Each participating team will get only two laps with a gap of maximum 5 minutes between each lap! The fastest lap will be considered!
+\n\t•	 Not more than 2 team members will be allowed in the arena at a time.
+\n\t•	The top teams from the qualifying rounds will make it to the second round.
+	\nSecond round
+\n\t•	Races will be conducted between multiple cars at a time. The participants must use a remote with frequency of band spectrum 2.4 GHz, ensuring that the frequency of your remote does not overlap with others. 
+\n\t•	In the final round only one of the team members will be allowed in the racing arena other than the controller on the stand.
+\n\t•	Checkpoints will be placed throughout the arena.
+\n\t•	If a machine is stuck or falls off the arena, that team will be allowed to pick it up and place it at a checkpoint behind that point, the time for which will be added to the total lap time.
+\n\t•	If a machine disintegrates in the arena leaving behind loose parts the team will be disqualified.
+\n\t•	Once the race begins team members will be immediately disqualified if found touching their`s or opponent`s machine.
+\n\t•	If any of the bots starts off before the flag is waved, the counter would be restarted and the machines will get a second chance. However, if any machine starts off before the waving of flag (or countdown) for a second time, it will be disqualified. Once disqualified the team can`t participate again in the event. .
+\n\t•	If any member of a team is found purposely damaging other team`s bot the team will be disqualified.
+
+		</item>
+		
+        <item >
+		Aman Jha	\t+91 7709081462
+		</item>   
+		
+		<item >specification,judging criteria,tutorials,and much more.... \n.on http://technovanza.org/fast-furious.php</item>
+  </string-array>
+    
+    </resources>

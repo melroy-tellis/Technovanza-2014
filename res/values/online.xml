@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--online==================================================== -->
+		
+		<string-array name="algocrack">
+        <item >Algorithm is defined as an instance of logic, the key to unlock the toughest challenges of 
+               programming. Here�s your chance to test your logic and crack the most demanding and mindboggling 
+               challenges of programming. 
+         </item>
+        <item>1. Round A, Round B are qualifier rounds.\n
+          	2. The participants with better combined scores in round A and B will qualify for the finals.\n
+ 			3. Each round consists of 10 (Ten) Questions.\n
+ 			4. Finals having another 8 questions with a race to submit all correctly working codes.
+      Only here finalist allowed to make a second submission incase he is not sure (for some XYZ reason), but only the correct working one will be accepted   
+    	</item>
+        <item >1. Participation is individual.\n
+            2. Only one entry per participant per round will be entertained.\n
+            3. You can make ONLY ONE SUBMISSION.\n
+            4. This submission should include all your solutions.\n
+            5. You can write an algorithm or a program in C/C++ or Java only.\n
+            6. Also any submission that contains harmful code, malware, etc. will lead to disqualification.\n
+            7. Submission time will be used as tie breaker.\n
+            8. First finalist to submit maximum working codes with desired output wins. \n 
+            
+        </item>
+        <item >
+           Hena Shah\t   : +91 9029967487\n
+           Ajinkya Wavare\t: +91 9920657396 
+        </item>
+        <item>
+            specification,judging criteria,tutorials,and much more.... \n.on http://technovanza.org/algocrack.php
+        </item>
+    </string-array>
+<string-array name="codeinx">
+        <item >A challenge to all the multi-linguists of the programming world! Coding is your passion and 
+               language no bar? Then Code in X is yours, each round in a different language(language and 
+               its compiler information will be given). So are u ready to �Code in X�.\n
+               FREE Registrations for all events and non-commercial exhibitions"\n
+               Cash prize worth 10,000 INR to be won. "  
+         </item>
+        <item> 
+ 			1. Round 1 for first Language:\n\n
+ 			a.  Set 1: General deal with code snippets, 50 questions\n
+ 			1.  Every correct answer will give you +1 points.\n
+ 			2.  No negative marking.\n\n
+
+    b . Set 2:  Participants will be given 10 questions\n
+
+        1.  Correct answer to each program will give you +10 points.\n
+
+        2.  Points will be decided on space and time requirements for the program.\n\n
+
+2.  Round 2 for second Language:\n\n
+
+    a.  Set 1:  General deal with code snippets, 50 questions\n
+
+        1.  Every correct answer will give you +1 points.\n
+
+        2.  No negative marking.\n
+
+    b.  Set 2:  Participants will be given 10 questions\n\n
+
+        1.  Correct answer to each program will give you +10 points.\n
+
+        2.  Points will be decided on space and time requirements for the program.\n\n
+
+3. Round 3 for third Language:\n\n
+
+    a. Set 1:  General deal with code snippets, 50 questions>\n\n
+
+        1.  Every correct answer will give you +1 points.\n
+
+        2.  No negative marking.\n
+
+    b.  Set 2:  Participants will be given 10 questions\n\n
+
+        1.  Correct answer to each program will give you +10 points.\n
+
+        2.  Points will be decided on space and time requirements for the program.\n\n
+
+4. Round 4 Final Round:\n\n
+
+    a.  3 programming questions will be provided to participants and they have to solve it in all the three language.
+                
+    	</item>
+        <item >
+1.  Code In X is an online event.\n
+2.  For the first 3 rounds participants will have to download the problem statement, solve and submit it within given duration of time.\n
+3.  Each person can register once.\n
+4.  The participants will have to go through all 4 rounds to become Coder of X.\n
+5.  Participant can make use of available online documentation for the particular language only for first 3 rounds.\n
+6.  Any submission that contains harmful code, malwares, etc. will lead to disqualification.\n
+7.  For final round some rules will be disclosed on the spot.\n
+            </item>
+        <item >Kanchi Masalia\t: +91 9773778527\n
+Shreya Shah\t: +91 7666506698 \n
+</item>
+<item >
+    specification,judging criteria,tutorials,and much more.... \n.on http://technovanza.org/code-in-x.php
+</item>
+    </string-array>
+<string-array name="cryptext">
+        <item >Calling for efforts without wax! Can your mind and code 	Identify encoding method for given 
+               cipher text and decode the message? Then welcome to our digital fortress and decrypt your way to 
+               victory! 
+         </item>
+        <item> 
+ 				a.	Round 1: You will be given an encrypted piece of text with a key to decrypt it. Correct decryption will be your key to the next level.\n\n
+b.	Round 2: You will be expected to write a code to decrypt the given encrypted text.\n\n
+c. Round 3: The decryption from the previous round will help you clear the final round which will include image encryption.\n\n  
+    	</item>
+        <item >1. It\'s an individual online event.\n
+2. Each person can register only once.\n
+3. Questions will be e-mailed immediately to the participant.\n
+4. The participants have to go through minimum 3 rounds to be able to win the competition.\n
+5. Maximum 2 submissions will be accepted for each round, in case the participant wants to change his/her first submission.\n
+6. Hints to decode the questions will be provided depending on the gameplay.\n
+7. The decision of the organisers will be final and binding.\n
+NOTE: All the decisions taken by the judge will be final and binding to all. Any queries afterwards will not be entertained.
+
+            </item>
+        <item >Prapti Verma\t: +91 9930874381 
+            </item>
+            <item >
+    specification,judging criteria,tutorials,and much more.... \n.on http://technovanza.org/cryptext.php
+</item>
+    </string-array>
+<string-array name="myst">
+        <item >MYST, the Un-Quiz is back... the only journey where Rights take you through and others are Left behind. 
+               The new MYST is Mysterious... You decide your faith this time. Be cautious deep trenches await your path 
+               to victory. Just one hint to get you across, the bridge is narrower. Touch the rope and the deeper the 
+               next trench is. Be wiser and you sail through.MYST the only place where your processing speed matters 
+               more than the Memory. Overclock your brains and... GET SET GO.\n
+               Cash Prize Worth 10,000 INR to be won. 
+         </item>
+        <item> 
+ 			No Gameplay for this Event.Switch to Rules.
+    	</item>
+        <item >In the new MYST each level has 2 questions, though participants answers just 1 to move to the next level Along the given details every question has an additional optional hint available.\n
+Using the hint will actually follow the Tougher road ahead.\n
+As the level increases the overall difficulty too increases, though a couple of simpler levels are present on the way to help you ease out.\n
+MYST has only 1 winner, So do not leak answers and ruin others fun as the game is still on.\n
+\n
+Participants are allowed to use any search engine.\n
+If you think your answer is correct but not being accepted by the system then mail it to us at myst@technovanza.org with explanation of why and how you reached it (Subject: Level x - username)\n
+\n
+Do not ask for additional hints; levels where given hints are suff icient for any player to get the correct answer, will be provided with additional hints.\n
+The new MYST has no hints hidden in the page source code, searching for them will be a futile effort. The answer can be text, numeric and alphanumeric.\n
+The progress of all participants is being constantly monitored.\n
+All the best to all the participants, Enjoy your journey.\n
+            </item>
+        <item >Yatin Shirwadkar: +91 9987721701</item>
+    <item >
+    specification,judging criteria,tutorials,and much more.... \n.on http://technovanza.org/myst.php 
+</item>
+    </string-array>
+<string-array name="vsm">
+        <item >Want a firsthand experience of the Dalal street? Think you can grab opportunities and make most of out of 
+               the dynamic stock market? Are you that smart investor who can buy right and sell right?  
+         </item>
+        <item> 
+ 			 Coming soon!!!
+    	</item>
+        <item > Coming soon!!!
+            </item>
+        <item >Coming soon!!!</item>
+    	<item >
+    specification,judging criteria,tutorials,and much more.... \n.on http://technovanza.org/vsm.php 
+</item>
+    </string-array>
+<string-array name="forex">
+        <item >Get into this forex market and buy some foreign exchange, bet on the currency with higher demands and gain 
+               profits. You get Just 10 minutes a day and the changes occur every 20 seconds. You got to be fast !!! 
+         </item>
+        <item>   Coming soon!!!
+    	</item>
+        <item >Coming soon!!!
+            </item>
+        <item >Coming soon!!!</item>
+        <item >
+    specification,judging criteria,tutorials,and much more.... \n.on http://technovanza.org/forex.php
+</item>
+    </string-array>
+    
+		</resources>
+		

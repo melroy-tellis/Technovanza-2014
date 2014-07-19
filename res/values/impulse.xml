@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+		<!-- impulse==================================================== -->
+		<string-array name="TrickyTronics">
+        <item >
+            Identify components, assemble circuits,
+             test your electronics in this impulsive and hands on event.
+         </item>
+        <item> 
+ 				Coming soon!!!     
+    	</item>
+        <item >Coming soon!!!</item>
+        <item >Archana Dhum : 7208280625\n
+Bhagyashri Patere : 9773793652</item>
+    </string-array>
+    
+		<string-array name="lan_gamimg">
+        <item >Hushed voices, silent footsteps, reloading of a gun, reviving of engines, a gush of nitrous .If this is your 
+kind of music, then this is your kind of event! For all those gaming maniacs who can’t get enough of the 
+virtual world! An event promising excitement, pressure, thrill and enjoyment to the core! Where the 
+virtual will merge into reality, the ultimate LAN gaming experience awaits the worthy challengers! 
+         </item>
+        <item> 
+ 				Coming soon!!!     
+    	</item>
+        <item >Coming soon!!!</item>
+        <item >Srinath Umbarje : 9594845524</item>
+    </string-array>
+   <string-array name="TextoMania">
+        <item >
+            If mozart can play the piano blind, shouldn’t the computer
+             addicts be able to type blindfolded! Lets see…
+         </item>
+        <item> 
+ 				Coming soon!!!     
+    	</item>
+        <item >Coming soon!!!</item>
+        <item >Anita Trimukhe : 7208296366</item>
+    </string-array>
+    <string-array name="ClickNCapture">
+        <item >
+            Look at the various events in Technovanza’13 and 
+            capture your favourite sectors onto a collage in photoshop.
+             Tickle your creative side, photography, designing ability and
+              your eye for observation altogether with this on spot challenge.
+         </item>
+        <item> 
+ 				Coming soon!!!     
+    	</item>
+        <item >Coming soon!!!</item>
+        <item >Hrishikesh Chowdhari : 9403511775</item>
+    </string-array>   
+    <string-array name="GoogleJunkie">
+        <item >
+            Enough of coding! Come and just Google!! 
+            Google Junkie is a fun filled event which checks
+             your capabilities in using the google search engine.
+         </item>
+        <item> 
+ 				Coming soon!!!     
+    	</item>
+        <item >Coming soon!!!</item>
+        <item >Atul Nar : 8976844017</item>
+    </string-array>   
+    <string-array name="TechQuiz">
+        <item >
+            Passionate about the latest gadgets, well informed about
+             the gods of technological inventions, aware of every bit of the techno world? 
+             Explore your technological fascinaton and update your tech knowledge!
+         </item>
+        <item> 
+ 				Coming soon!!!     
+    	</item>
+        <item >Coming soon!!!</item>
+        <item >Sameer Watve-8976271360\n
+Pratik Pokharkar : 9004932690</item>
+    </string-array>   
+    <string-array name="tweet2win">
+        <item >Online recharge is lot more fun and perky now, thanks to Technovanza+ Twitter! Its only here that a 
+tweet is equal to Rs 100! Our tasks plus your cool quotient gets you a chance to win a free recharge! So get funky and crazy, amaze us with your talent by 
+completing the wackiest tasks of the season and immediately tweet to win hash tagging Technovanza! Are you game? 
+         </item>
+        <item> 
+ 				Coming soon!!!     
+    	</item>
+        <item >Coming soon!!!</item>
+        <item >Coming soon!!!</item>
+    </string-array>   
+    <string-array name="TechCharades">
+        <item >
+            Techno is ready to leave you speechless this time (literally)! 
+            Forget movies how well can you enact technical words?
+         </item>
+        <item> 
+ 				Coming soon!!!     
+    	</item>
+        <item >Coming soon!!!</item>
+        <item >Tejashri : 9422575981</item>
+    </string-array>           
+		
+		</resources>

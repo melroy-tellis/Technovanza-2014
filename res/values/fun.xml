@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- fun events==================================================== -->
+		<string-array name="laser_cs">
+        <item >
+            Counter Strike just got more challenging! 
+			Time to strike armed with laser guns! Don’t miss it! 
+         </item>
+        <item> 
+ 			 http://technovanza.org/funevents.php     
+    	</item>
+		
+        <item >http://technovanza.org/funevents.php</item>
+        
+		<item >
+\n		 RADHIKA PADMANABHAN(9920901059)
+\n                            SHAIVAL SHAH
+
+		</item>
+        <item>
+   specification,judging criteria,tutorials,and much more.... \n.on http://technovanza.org/funevents.php
+        </item>
+        </string-array>
+		
+		<string-array name="Aquasoccer">
+        <item >
+          Time to redefine the idea of thrill! Aqua soccer is
+		  here with an exciting twist to water polo- BOTS!  	
+         </item>
+        <item> 
+ 			 http://technovanza.org/funevents.php     
+    	</item>
+        <item >http://technovanza.org/funevents.php</item>
+        
+		<item >ANIKET CHAVAN(9819552768)\n
+	             DIVYA KACHOLIA(9561882881)
+		</item>
+        
+		<item>
+            specification,judging criteria,tutorials,and much more.... \n.on http://technovanza.org/funevents.php
+        </item>
+        </string-array>
+		
+		<string-array name="TechnoDrift">
+        <item >
+            A hurdle race between two Bluetooth controlled bots! Designed 
+			to win because this is as furious as the ‘Tokyo drift’ with a 
+			echnical turn! Techno drift challenges you! 	
+         </item>
+        <item> 
+ 			 http://technovanza.org/funevents.php     
+    	</item>
+        <item >http://technovanza.org/funevents.php</item>
+        <item >
+		AKSHAY BOKADE (8879632839)\n
+		MINAL SURYAWANSHI(9769459789)
+		</item>
+        <item>
+            specification,judging criteria,tutorials,and much more.... \n.on http://technovanza.org/funevents.php
+        </item>
+        </string-array>
+        
+		<string-array name="masterofpuppets">
+        <item >
+            Your gestures are the only link between your mind and your bot! Where a subtle whisk of your 
+			hand can make it or break it! The bot will have to perform a task responding only to the 
+			positions of your palm. 	Master of puppets is back with a treacherous arena and fiercer 
+			competition.  Are you in? 
+            
+         </item>
+        <item> 
+ 			 http://technovanza.org/funevents.php     
+    	</item>
+        <item >http://technovanza.org/funevents.php</item>
+        <item >
+		 SONU CHAURASIYA(9892344104)\n
+	      BARUN GHOSH(9819472123)
+
+		</item>
+        <item>
+            specification,judging criteria,tutorials,and much more.... \n.on http://technovanza.org/funevents.php
+        </item>
+    </string-array>
+ 
+ </resources>
+		
+		

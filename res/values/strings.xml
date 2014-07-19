@@ -3,9 +3,25 @@
 
     <string name="app_name">Technovanza \'14</string>
     <string name="events">Events</string>
-    <string name="media">Media</string>
-    <string name="news">News</string>
+    <string name="media">Gallery</string>
+    <string name="news">Twitter</string>
     <string name="about">About</string>
+    <string name="twitter_welcome">Welcome to Techno-Twitter\!</string>
+    <string name="twitter_signin_notification">You need to sign into Twitter to authorize the app</string>
+    <string name="twitter_signin">Sign In</string>
+    <string name="technovanza">\@Technovanza</string>
+    <string name="tweet_btn_content_desc">Button for posting tweets</string>
+    <string name="facebook">Facebook</string>
+    <string name="housecup">Housecup</string>
+    <string name="house_info">"Champions are not supernatural, they just fight one more second when everyone else quits"\n 
+\n
+The fight for glory just got fiercer! Technovanza is all set to test your department`s strengths and expose its weaknesses through the House Cup. Can your team integrate itself to perfection and lift the first ever cup of inter-departmental supremacy?
+\n\n
+Technovanza’s House Cup, introduced for the first time in the history of Technovanza aims to act as a platform where technical expertise is guided by one’s passion for his branch. This is not only an attempt to encourage participation among our students but also to build a healthy network among students, unifying everyone belonging to different years of their education in the institute. The house-cup will thus create an atmosphere of growth and development in the campus. This will undoubtedly help students evolve and take VJTI ahead on the path of innovation.
+\n\n
+Multi-specialty is the word of the millennium. Only a sound knowledge of various disciplines can turn an idea into reality. Thus taking this year’s theme of Technovanza - ‘Integrating to Perfection’ a step further we decided to integrate various branches into Houses leaving each house with sufficient knowledge about mechanics, electronics and coding. Moreover, interaction among students from different branches will turn this competition into a learning experience where the boundaries of departments dissolve. Such an exposure will help students develop a multi-directional approach to any given problem!
+\n\n
+We hope that the House Cup is well received by the college and proves to be an important source of innovation for Technovanza in years to come.</string>
 
 </resources>
 
