@@ -14,7 +14,7 @@
     	    	android:layout_marginBottom="10dp"
     	    	android:layout_alignParentLeft="true"
             	android:layout_alignParentTop="true"
-            	android:layout_width="220dp"
+            	android:layout_width="145dp"
             	android:layout_height="220dp" >
     </FrameLayout>       	
             	    
@@ -25,7 +25,7 @@
     	    	android:layout_marginBottom="10dp"
     	    	android:layout_alignParentRight="true"
             	android:layout_alignParentTop="true"
-            	android:layout_width="220dp"
+            	android:layout_width="145dp"
             	android:layout_height="220dp" >
     </FrameLayout>
     
@@ -34,7 +34,7 @@
     	    	android:layout_margin="10dp"
             	android:layout_below="@id/frag1"
             	android:layout_alignParentLeft="true"
-            	android:layout_width="220dp"
+            	android:layout_width="145dp"
             	android:layout_height="220dp" >
     </FrameLayout>
        	
@@ -43,7 +43,7 @@
     	    	android:layout_margin="10dp"
             	android:layout_below="@id/frag2"
             	android:layout_alignParentRight="true"
-            	android:layout_width="220dp"
+            	android:layout_width="145dp"
             	android:layout_height="220dp" >
     </FrameLayout>
     <FrameLayout 
@@ -51,7 +51,7 @@
     	    	android:layout_margin="10dp"
             	android:layout_below="@id/frag3"
             	android:layout_alignParentLeft="true"
-            	android:layout_width="220dp"
+            	android:layout_width="145dp"
             	android:layout_height="220dp" >
     </FrameLayout>
     <FrameLayout 
@@ -59,7 +59,7 @@
     	    	android:layout_margin="10dp"
             	android:layout_below="@id/frag4"
             	android:layout_alignParentRight="true"
-            	android:layout_width="220dp"
+            	android:layout_width="145dp"
             	android:layout_height="220dp" >
     </FrameLayout>
     
