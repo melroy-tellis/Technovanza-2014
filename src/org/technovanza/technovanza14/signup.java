@@ -15,7 +15,6 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONObject;
 
-
 import org.technovanza.technovanza14.TextCaptcha.TextOptions;
 
 import android.os.Bundle;
@@ -138,7 +137,7 @@ public class signup extends Activity {
    	try
     	   {
 		    HttpClient httpclient = new DefaultHttpClient();
-	        HttpPost httppost = new HttpPost("http://10.2.224.155/insert.php");
+	        HttpPost httppost = new HttpPost("http://192.168.0.3/insert.php");
 	       
      httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
    	HttpResponse  response  = httpclient.execute(httppost); 

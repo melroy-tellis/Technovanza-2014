@@ -80,6 +80,9 @@ public class TechnoTileFragment extends Fragment implements OnClickListener,OnLo
 			case R.id.housecup_frag:
 				this.getActivity().startActivity(new Intent(this.getActivity(),StyledTabs_house.class));
 				break;
+			case R.id.facebook_frag:
+				this.getActivity().startActivity(new Intent(this.getActivity(),HelloFacebookSampleActivity.class));
+				break;
 		}
 		
 		
