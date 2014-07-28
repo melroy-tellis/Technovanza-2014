@@ -69,7 +69,7 @@ public class TechnoTileFragment extends Fragment implements OnClickListener,OnLo
 		switch(view.getId())
 		{
 			case R.id.events_frag:
-				this.getActivity().startActivity(new Intent(this.getActivity(),StyledTabs.class));
+				this.getActivity().startActivity(new Intent(this.getActivity(),MainActivity_Nav_SideBar.class));
 				break;
 			case R.id.news_frag:
 				this.getActivity().startActivity(new Intent(this.getActivity(),NewsActivity.class));

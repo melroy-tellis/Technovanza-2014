@@ -1,8 +1,8 @@
 package org.technovanza.technovanza14;
 
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.NavUtils;
 import android.support.v4.view.ViewPager;
@@ -19,13 +19,14 @@ public class StyledTabs extends SherlockFragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.simple_tabs);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+   /*     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         FragmentPagerAdapter adapter = new EventsAdapter(getSupportFragmentManager());
         ViewPager pager = (ViewPager)findViewById(R.id.pager);
         pager.setAdapter(adapter);
         TabPageIndicator indicator = (TabPageIndicator)findViewById(R.id.indicator);
         indicator.setViewPager(pager);
-    }
+    */
+        }
     
     @Override
    	public boolean onOptionsItemSelected(MenuItem item) {
@@ -38,7 +39,7 @@ public class StyledTabs extends SherlockFragmentActivity {
    		return super.onOptionsItemSelected(item);
    	}
 
-    
+    /*
     class EventsAdapter extends FragmentPagerAdapter {
         public EventsAdapter(FragmentManager fm) {
             super(fm);
@@ -59,5 +60,5 @@ public class StyledTabs extends SherlockFragmentActivity {
         }
     }
 
-
+*/
 }

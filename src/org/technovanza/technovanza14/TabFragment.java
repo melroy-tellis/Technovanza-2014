@@ -3,7 +3,7 @@ package org.technovanza.technovanza14;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.app.ListFragment;
+import android.app.ListFragment;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -30,7 +30,7 @@ public final class TabFragment extends ListFragment {
 	static int images[] = {R.drawable.autobots,R.drawable.imech, R.drawable.ibuild, R.drawable.eureka, R.drawable.manageria, R.drawable.icode,R.drawable.onlineevnets, R.drawable.impulse, R.drawable.fun_events};
 	int pos;
 	
-	public static TabFragment newInstance(int pos) {
+	public TabFragment newInstance(int pos) {
 		TabFragment fragment = new TabFragment();
 		Log.d("position", "the position is "+pos);
 		Bundle args = new Bundle();
