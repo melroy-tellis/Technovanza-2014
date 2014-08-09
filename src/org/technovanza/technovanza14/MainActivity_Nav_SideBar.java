@@ -16,6 +16,7 @@
 
 package org.technovanza.technovanza14;
 
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Fragment;
@@ -177,45 +178,16 @@ import android.widget.Toast;
 
     private void selectItem(int position) {
         // update the main content by replacing fragments
-  
-/*
-    	FragmentManager fragmentManager = null;
-    	try{
-    		fragmentManager = getFragmentManager();
-    	}
-    	catch(Exception e){
-    	Log.d("mohit",""+e);	
-    	}
-    
+    	   Fragment fragment = new TabFragment();
+           Bundle args = new Bundle();
+           args.putInt(TabFragment.ARG_PLANET_NUMBER, position);
+           fragment.setArguments(args);
 
-        		if (fragmentManager.findFragmentById(android.R.id.content) == null) {  
- 
-        	    	TabFragment l = null;
-        	try{
-        	l=new TabFragment();
-        	}
-        	catch(Exception e){
-        	Log.d("mohit",""+e);	
-        	}
-	try{
-        		l.newInstance(position);
+           FragmentManager fragmentManager = getFragmentManager();
+           fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
 
-        	}
-        	catch(Exception e){
-        	Log.d("mohit",""+e);	
-        	}
-        	try{
-        		fragmentManager.beginTransaction().replace(R.id.content_frame,l).commit();
-
-        	}
-        	catch(Exception e){
-        	Log.d("mohit",""+e);	
-        	}
-}
-        		
-        		*/
-         // update selected item and title, then close the drawer
-        mDrawerList.setItemChecked(position, true);
+           // update selected item and title, then close the drawer
+ mDrawerList.setItemChecked(position, true);
         setTitle(mPlanetTitles[position]);
         mDrawerLayout.closeDrawer(mDrawerList);
     }

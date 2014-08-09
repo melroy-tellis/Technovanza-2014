@@ -137,7 +137,7 @@ public class signup extends Activity {
    	try
     	   {
 		    HttpClient httpclient = new DefaultHttpClient();
-	        HttpPost httppost = new HttpPost("http://192.168.0.3/insert.php");
+	        HttpPost httppost = new HttpPost("http://androidproject.url.ph/virtualLibrary//insert.php");
 	       
      httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
    	HttpResponse  response  = httpclient.execute(httppost); 

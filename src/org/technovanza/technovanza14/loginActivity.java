@@ -163,7 +163,7 @@ Log.d("mohit","Exception 1"+e);
       final EditText e_id=(EditText) findViewById(R.id.editText1);
         final EditText e_password=(EditText) findViewById(R.id.editText3);
         Button login=(Button) findViewById(R.id.button1);
-        Button signup=(Button) findViewById(R.id.button2);
+        TextView signup=(TextView) findViewById(R.id.button2);
         
         login.setOnClickListener(new View.OnClickListener() {
 			
@@ -220,7 +220,8 @@ Log.d("mohit","Exception 1"+e);
          	try
     	   {
 		    HttpClient httpclient = new DefaultHttpClient();
-	        HttpPost httppost = new HttpPost("http://192.168.0.3/login.php");
+	        HttpPost httppost = new HttpPost("http://androidproject.url.ph/virtualLibrary//login.php");
+	        
 	       
      httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
    	HttpResponse  response  = httpclient.execute(httppost); 

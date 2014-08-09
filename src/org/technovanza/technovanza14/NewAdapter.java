@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -65,8 +66,9 @@ Context c=activity;
   c=activity;
   text = (TextView) convertView.findViewById(R.id.textView1);
   text.setText(tempChild.get(childPosition));
-  final int t=groupPosition;
+  text.setTextColor(Color.WHITE);
   
+  final int t=groupPosition;
   
   convertView.setOnClickListener(new OnClickListener() {
    @Override
@@ -117,6 +119,8 @@ Context c=activity;
    convertView = minflater.inflate(R.layout.grouprow, null);
   }
   ((CheckedTextView) convertView).setText(groupItem.get(groupPosition));
+  ((CheckedTextView) convertView).setTextColor(Color.WHITE);
+  
   ((CheckedTextView) convertView).setChecked(isExpanded);
   return convertView;
  }

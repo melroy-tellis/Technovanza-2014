@@ -26,10 +26,12 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ExpandableListView;
 import android.widget.ImageButton;
@@ -136,6 +138,7 @@ import android.widget.Toast;
 			  expandbleLis.setClickable(true);
 			  expandbleLis.setIndicatorBounds(width-75, width);
 			  expandbleLis.setCacheColorHint(Color.TRANSPARENT);
+			  
 			  setGroupData();
 			  //setChildGroupData(edata);
 			//RelativeLayout r1=(RelativeLayout)myView.findViewById(R.id.rr);
@@ -584,6 +587,8 @@ import android.widget.Toast;
 	}
 	
 	setChildGroupData(edata);
+
+
 	NewAdapter mNewAdapter = new NewAdapter(groupItem, childItem,x,y);
 	mNewAdapter
 	  .setInflater(
