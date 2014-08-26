@@ -6,19 +6,30 @@
     android:orientation="vertical" 
     android:background="#00B8E6"
 android:gravity="center|top" >
+ <com.facebook.widget.LoginButton
+         android:layout_marginTop="30dp"
+	 	        android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               
+                facebook:confirm_logout="false"
+                facebook:fetch_user_info="true"
+                />
+    
   <EditText
         android:id="@+id/editText1"
           android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"  
     
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:ems="10"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="90dp"
         android:hint="Id"
-         android:background="@drawable/textinputborder"
+        android:padding="10dp"
+         android:background="@drawable/login_"
         android:inputType="textEmailAddress"
-        android:padding="10dp" />
+        />
 
     <EditText
         android:id="@+id/editText3"
@@ -26,27 +37,31 @@ android:gravity="center|top" >
             android:layout_marginRight="20dp"  
     
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:ems="10"
-        android:layout_marginTop="10dp"
-         android:background="@drawable/textinputborder"
+        android:padding="10dp"
+        android:background="@drawable/login_"
         android:hint="password"
-         android:padding="10dp"
         android:inputType="textPassword" />
 
 
         <Button
     		 android:id="@+id/button1"
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="40dp"
-            android:text=""
-            android:layout_marginTop="30dp"
-			android:layout_marginLeft="0dp"
-            android:background="@drawable/login" />
+            android:textSize="15sp"
+            android:text="Login"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"  
+    		android:textColor="#ffffff"
+    		android:background="#3b5998"/>
+           <!-- android:background="@drawable/login" -->
+           
  
         <TextView
-            android:id="@+id/button2"
+            android:id="@+id/tvCreate"
             android:layout_marginTop="30dp"
 			
             android:layout_width="wrap_content"
@@ -56,15 +71,5 @@ android:gravity="center|top" >
             android:onClick="true"
             android:textColorHint="#ffffff" />
 
-  <com.facebook.widget.LoginButton
-         android:layout_marginTop="60dp"
-			
-                android:id="@+id/login_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-               
-                facebook:confirm_logout="false"
-                facebook:fetch_user_info="true"
-                />
-                
+                 
 </LinearLayout>

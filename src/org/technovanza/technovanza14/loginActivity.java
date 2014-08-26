@@ -6,20 +6,6 @@ import java.io.InputStreamReader;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
-import android.net.Uri;
-import android.os.Bundle;
-import android.util.Base64;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
-
-
-
-
-
-
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -31,13 +17,26 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONObject;
 
-
-
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.pm.Signature;
+import android.net.Uri;
+import android.os.Bundle;
+import android.os.StrictMode;
+import android.util.Base64;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.facebook.AppEventsLogger;
-import com.facebook.FacebookAuthorizationException;
-import com.facebook.FacebookOperationCanceledException;
-import com.facebook.FacebookRequestError;
 import com.facebook.Session;
 import com.facebook.SessionState;
 import com.facebook.UiLifecycleHelper;
@@ -45,23 +44,12 @@ import com.facebook.model.GraphObject;
 import com.facebook.model.GraphUser;
 import com.facebook.widget.FacebookDialog;
 import com.facebook.widget.LoginButton;
-import com.facebook.widget.ProfilePictureView;
-
-import android.os.StrictMode;
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.Context;
-import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.Signature;
-import android.content.pm.PackageManager.NameNotFoundException;
-import android.widget.EditText;
  
 public class loginActivity extends Activity {
 	 private static final String PERMISSION = "publish_actions";
 
-	
+
+	    public static final String PREFS_NAME="HouseCupFile";
 
 	String password;
 	String id;
@@ -76,7 +64,9 @@ public class loginActivity extends Activity {
 	    private boolean canPresentShareDialogWithPhotos;
 
 	
-	
+	    SharedPreferences.Editor editor;
+		  SharedPreferences settings;
+		
 	
 	
 	
@@ -114,31 +104,7 @@ public class loginActivity extends Activity {
         uiHelper = new UiLifecycleHelper(this, callback);
         uiHelper.onCreate(savedInstanceState);
 
-        try {
-        	   PackageInfo info = getPackageManager().getPackageInfo( getPackageName(), PackageManager.GET_SIGNATURES);
-        	   for (Signature signature : info.signatures) {
-        	        MessageDigest md = MessageDigest.getInstance("SHA");
-        	        md.update(signature.toByteArray());
-        	        String sign=Base64.encodeToString(md.digest(), Base64.DEFAULT);
-                    Log.e("MY KEY HASH:", sign);
-                    Toast.makeText(getApplicationContext(),sign,     Toast.LENGTH_LONG).show();
-               Log.d("mohit","Signature"+sign);
-               System.out.println("Signature"+sign);
-           	
-               //  TextView tvmyName = (TextView)findViewById(R.id.txtv);
-        		  //    /tvmyName.setText(Base64.encodeToString((md.digest()));
-        		  
-        		      
-        	   }
-        	} catch (NameNotFoundException e) {
-Log.d("mohit","Exception 1"+e);
-        	} catch (NoSuchAlgorithmException e) {
-        		Log.d("mohit","Exception 2"+e);
-        	      
-        	}
 
-
-       
         setContentView(R.layout.activity_main);
 
         loginButton = (LoginButton) findViewById(R.id.login_button);
@@ -163,7 +129,7 @@ Log.d("mohit","Exception 1"+e);
       final EditText e_id=(EditText) findViewById(R.id.editText1);
         final EditText e_password=(EditText) findViewById(R.id.editText3);
         Button login=(Button) findViewById(R.id.button1);
-        TextView signup=(TextView) findViewById(R.id.button2);
+        TextView signup=(TextView) findViewById(R.id.tvCreate);
         
         login.setOnClickListener(new View.OnClickListener() {
 			
@@ -173,8 +139,11 @@ Log.d("mohit","Exception 1"+e);
 				
 			id = e_id.getText().toString();
 			password = e_password.getText().toString();
-		
-			validate();
+			if(id.equals("") || password.equals(""))
+				Toast.makeText(getBaseContext(), "All Fields are Mandatory",
+						Toast.LENGTH_SHORT).show();
+			else
+				validate();
 		
 		}
 	});
@@ -262,10 +231,18 @@ Log.d("mohit","Exception 1"+e);
             code=(json_data.getInt("code"));
 			Log.d("mohit","code="+code);
             if(code==1)
-            {
-            	Intent tile=new Intent(loginActivity.this,MainActivity.class);
-        		startActivity(tile);
-                    }
+            { settings=this.getSharedPreferences("preference",0);
+            editor=settings.edit(); 
+            
+            	   editor.putString("id",id);
+                   editor.putString("name",id);
+                   editor.putString("password", password);
+                  editor.commit();
+                
+                  Intent i=new Intent(loginActivity.this,MainActivity.class);
+                  i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                  startActivity(i);
+                  finish();     }
             else
             {
 		 Toast.makeText(getBaseContext(), "Sorry, Try Again",
@@ -333,9 +310,24 @@ Log.d("mohit","Exception 1"+e);
         boolean enableButtons = (session != null && session.isOpened());
   
         if (enableButtons && user != null) {
-        	 Intent tile=new Intent(loginActivity.this,MainActivity.class);
-     		startActivity(tile);
-          
+        	SharedPreferences setting=this.getSharedPreferences("preference",0);
+        	SharedPreferences.Editor edit=setting.edit(); 
+        	edit.putString("id",user.getFirstName()+" "+user.getLastName());
+            edit.putString("name",id);
+            edit.putString("graph",user.getId());
+            edit.commit();
+            SharedPreferences settings=getSharedPreferences(PREFS_NAME,0);
+            SharedPreferences.Editor editor=settings.edit();
+            if(settings.getString("FBNAME",null)==null)
+            {
+            editor.putString("FBNAME",user.getFirstName()+" "+user.getLastName());
+            editor.putBoolean("ISNAME",true);
+            editor.commit();
+            }
+            Intent i=new Intent(loginActivity.this,MainActivity.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(i);
+            finish(); 
       //      profilePictureView.setProfileId(user.getId());
       //      greeting.setText(getString(R.string.hello_user, user.getFirstName()));
       } else {

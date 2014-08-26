@@ -8,5 +8,6 @@
 	<classpathentry exported="true" kind="lib" path="libs/twitter4j-core-4.0.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="/com.techno.technovanza14/libs/libGoogleAnalyticsServices.jar"/>
 	<classpathentry exported="true" kind="lib" path="/FacebookSDK/libs/bolts.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/Parse-1.5.1.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

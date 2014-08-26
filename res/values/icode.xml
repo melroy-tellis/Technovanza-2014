@@ -3,256 +3,88 @@
 	<!--icode==================================================== -->
 		
 		<string-array name="c_way">
-        <item >Let us C if you can make 	Bjarne Stroustrup proud! Do you think you have mastered C/C++? Here’s 
-               your chane to test your programming, debugging, and efficiency the c-way! Are you in?  
+        <item >C is such a powerful, dominant and supple language. C-way is an event which gives all c/c++ programmers a golden opportunity to showcase their coding skills .so test your c/c++ coding skills and have a pleasant experience to compete with other and be an Ultimate C Programmer!!!
          </item>
         <item> 
- 			   Round 1: Quizmania
-\n\na. Quiz will contain questions, riddles, puzzles related to the C programming language.
-\nb. Each correct answer will give you 1 point.
-\nc. The participant with better scores will qualify for Round 2.
-\nd. In case of a tie between the scores of candidates, a separate set of questions will have to be answered by them.
-\ne. The point system is at the discretion of the judges, and may be changed depending on the number of participants.
-
-\nRound 2: Blind Programming 
-
-\n\na. Participant will be given one program.
-\nb. The monitor will be switched off. 
-\nc. During the complete duration of Round 2, the participant will be allowed to turn on the screen for a certain duration, but at a stretch.
-\nd. The participants will NOT be allowed to debug the program, nor will they be able to compile it.
-
-\nRound 3: Game On!
-
-\n\na. Participants will be provided with VC, NetBeans.
-\nb. Participants will be informed in detail about the program they have to implement within the given time limit.
-\nc. The winner will be selected by judges based on the following criteria :
-     \n1. The output is as per requirement.
-     \n2. The output must be obtained keeping in mind the rules laid down by the judges.
-     \n3. The program should be efficient, simple and smart.    
-    	</item>
-        <item >1.C-Way is an event based on the C Programming language. 
-\n2.	It is an individual participant event.
-\n3.	Each person can register only once.
-\n4.	The participants have to go through 3 rounds to win.
-\n5.	Participants are not allowed to bring any media devices such as pen drives, CD, DVD etc.
-\n6.	Cell phones must be switched off.
-\n7.	All the stationeries such as pen, paper etc. will be provided.
-\n8.	Any violation of rule may lead to disqualification of participant.
-\n9.	Apart from these rules, additional rules, if any, will be disclosed on the spot.
-\n10.	The decision of the organizers is final and binding.</item>
+ 			  Coming Soon</item>
+        <item >Coming Soon</item>
         <item >
-Rahul Solanki	+91 8898652315
-Vaibhav Yengul	 +91 9969561660
-Parth Vajge	 +91 9920523126</item>
-<item >For more information visit: http://technovanza.org/c-way.php</item>
+Sonika Malani\n
+Sanjana Chhabira                                                
+</item>
+<item >Coming Soon</item>
     </string-array>
     
     <string-array name="javaguru">
-        <item >It’s not simply the Java in your Cup; it’s how you prepare it that makes it worth consuming. Any 
-               modern day software is developed using object oriented language especially java because of the 
-               “Write once, Run anywhere” architecture and its number of attractive and powerful features. 
-               Javatars, apply your java skills, compete with the bests and be the next Java Guru.          
+        <item >If you are really excited to make your own app, to develope a software using an object-oriented language then this is the event where you can apply your java skills, compete with bests and be the Javaguru!!!          
         </item>
-        <item> 
- 			Round 1: Multiple choice questions with a negative marking scheme. 
-\n\na.	Each correct answer will give you +2 points
-\nb.	Incorrect answer will give you a negative point i.e.  -1
-\nc.	No marks however shall be deducted for questions not attempted.
-\nd.	Participants with better scores will qualify for Round 2.
-\nRound 2: Reverse Coding
-\n\na.In this round every participant shall be provided with .class file.
-\nb.	Participants are required to view the output and code in java for deriving the given output.
-\nc.	Participants shall not be provided with developing tools like Netbeans/Eclipse and they will have to code on notepad.
-\nd.	Participants are not allowed to compile or run their source code.
-\ne.	Participants with the most appropriate output in minimum time shall move forward.
-OR
-Participants will be given certain time to code and the ones with most appropriate output shall move forward.
-\nRound 3: 	
-\n\na.	In this round participants will be given a problem statement.
-\nb.	The type of problem, time allowed, functionalities required shall be decided by the event organizers.
-\nc.	The winner shall be decided by the Judges based on various criteria.
-            
+        <item>Coming Soon
     	</item>
-        <item >1.	Java Guru event is based on Java Programming language.
-\n2.	It is an individual event.
-\n3.	Each person can register only once.
-\n4.	The participants have to go through 3 rounds.
-\n5.	After every round only selected participants shall move ahead.
-\n6.	Participants are not allowed to bring any media devices such as pen drives, cd, dvd etc.
-\n7.	Cell phones must be switched off.
-\n8.	All the stationeries such as pen, paper etc. will be provided. No access to Internet shall be provided.
-\n9.	Any violation of rule may lead to disqualification.
-\n10.	Apart from these Rules, some additional rules will be disclosed on the spot.
-\n11.	The decision of the organizers is final and binding.
+        <item >Coming Soon     
+        </item>
+        <item >Anirudh Loya\n
+			   Bhairavee Chitnis
             
         </item>
-        <item >Mohit Acchra 	+91 8983400280
-			   Sunny Nandwani +91 9699952800
-            
-        </item>
-        <item >For more information visit: http://technovanza.org/java-guru.php</item>
+        <item >Coming Soon</item>
     </string-array>
     
     <string-array name="technohunt">
-        <item>Techno Hunt invites you to a world of exquisite programming involving creativity, skills and teamwork.Your logical skills are put to test in this extreme juxtaposition of riddles and problem solving.The aim of your team will be to reach the glorious finals!Does your team have what it takes to tackle the mega hunt? Are you ready to chase down and tackle conundrums?
-            
-            
-            Two players, 1 team and innumerable clues hidden in a maze-like campus! Each solution unlocks a file-the 
-               road to the next location! Are you ready for this unique game of confusion, intelligence, mystery and fun?
-         </item>
-        <item> 
- 				Hunting Rounds:
-\n1.In each round there will be three levels with varying increasing difficulty which will include puzzles, riddles and programs.
-\n2.The participants will naturally need to complete levels one by one to reach the final level.
-\n3.Detailed description about levels will be given during the event.
-\n4.Each level will be having challenging tasks in store for the participants.
-\n5.Only after successful completion of initial levels they can move on to the next level.
-\n6.Each successful completion of task will give you points per level. On the completion of the third level a team will get 50 points bonus.
-\n7.A helpline functionality is provided for each level and upon using it the points will be deducted as follows –
-
-\ni)	2 points for riddle
-\nii)	2 points for program
-\niii)	1 point for identifying the place
-\n8.The teams having the highest points will be selected for the next round. For the Thirdand Final round only 3 teams will be selected. The team with the highest points will be declared as the winner in the third round.
-\n9.The points of previous rounds will be carry forwarded to the next round.
-            
-    	</item>
-        <item >1.Techno Hunt involves complex programming and problem solving skills. Participants must be acquainted with at least one programming language preferably C, C++ or Java.
-\n2.It is a team event and each team will consist of two members. One member for coding and one for solving and hunting riddles.
-\n3.The team cannot be changed after registration which will be free.
-\n4.Each team can register only once.
-\n5.Participants are not allowed to bring any media devices such as pendrives, CD, DVD etc.
-\n6.Cell phones must be switched off.
-\n7.All stationary such as pen, paper etc. will be provided.
-\n8.Any violation of rules will lead to disqualification of your team.
-\n9.Apart from these rules, additional rules will be disclosed on the spot.
-\n10.The decision of the organizers is final and binding.
+        <item>You must have definitely seen the Amazing race and liked it also. In Technovanza you will experience but in a different sort of way. It is a team event in which you have to locate the clues at different locations of the campus to unlock a hidden file and thus go to the next round. So get ready to enjoy the amazing coding race.
+            </item>
+        <item>Coming Soon</item>
+        <item >Coming Soon     
+        </item>
+        <item >Aakash Adhikari\n
+            Neha Kumari
             
         </item>
-        <item >Vaibhav Sawant 	+91 9869461118
-            Meghna Shastri  	+91 9619960101
-            
-        </item>
-        <item >For more information visit: http://technovanza.org/technohunt.php</item>
+        <item >Coming Soon</item>
     </string-array>
     
 	<string-array name="ultimate_coder">
-        <item >Keep your concentration levels high as the beast is here. The stakes are huge as we present to you the ultimate 
-               coding competition. Get ready to sustain the most challenging situations where in concentration and smartness 
-               would be the only defense.
+        <item >Ever wondered to experience most challenging coding competition if so, prepare yourself for an exciting journey of wonderful coding world.
+Be an Ultimate Coder by showing your smartness and concentration!!!
          </item>
         <item> 
- 			This event consists of 5 rounds of 15 minutes each. 
-The participant has to code for the given problem statement within the time allotted and also finish a TASK, which will be revealed on the spot.
-The participant has to score maximum points in each round.
-The one scoring the maximum cumulative points and completing all the tasks will be the winner.    
-    	</item>
-        <item >1.	Each person can register only once.
-\n2.	The participants have to go through 5 rounds to win. 
-\n3.	Participants are allowed to choose the programming language among any of the three - C, C++ or Java.
-\n4.	Participants are not allowed to bring any media devices such as pen drives, CD, DVD etc.
-\n5.	Cell phones must be switched off. 
-\n6.	All the stationeries such as pen, paper etc. will be provided.
-\n7.	Additional rules will be disclosed on the spot. 
-\n8.	Any violation of the rules may lead to disqualification of the participant.</item>
-        <item >Vineet Vijay Salian -	+91 8080731371
-Rithul Raphel -	+91 9321132221</item>
-<item >For more information visit: http://technovanza.org/ultimate-coder.php</item>
+ 			Coming Soon
+ 			</item>
+        <item >Coming Soon</item>
+            <item >Suraj Sunil Naik\n
+                Akash Mane
+</item>
+<item >Coming Soon</item>
     </string-array>
     
 		<string-array name="mission_sql">
-        <item >Entity, relationships, constraints, tuples, queries……Sounds familiar?? You think you have the knack to work 
-               with databases? Be ready to do all you can, right from answering simple questions to executing complex queries. 
-               Participate in mission Sql… Join the Tables... Press the Trigger... and Fire the Queries! 
+        <item >If you love working with databases then this is the event for you. Get ready to solve the problems with difficulty level increasing with each problem.
          </item>
-        <item> 
- 				Round 1: Seek-O-Mine
-\nParticipants will be given a set of questions for which they will have to formulate queries. 
-\nRound 2: LockQuer
-\nParticipants will have to solve a set of multiple choice questions to proceed further in this round. After which, they will be given a set of advanced level queries to code like, triggers and procedures. The scores of sub rounds will be considered to stipulate their debut to the third round. 
-\nRound 3: Bugzilla
-\nParticipants will have to rectify the errors in procedures, cursors, triggers and functions in this particular round within a given time slot. After reaching the deadline, they will be again given another time slot in order to run those queries and display the required output wherever necessary.      
-    	</item>
-        <item >1.It examines your comprehensive knowledge and thorough understanding about fundamentals and proficiency in databases. 
-\n2.Participant must have knowledge of at least one DBMS among Oracle or MS SQL 2005 or mysql. 
-\n3.Registration will be free. 
-\n4.Each person can register only once. 
-\n5.Participants are not allowed to bring any media devices such as pendrives, CD, DVD etc. 
-\n6.Cell phones must be switched off. 
-\n7.All stationary such as pen, paper etc. will be provided. 
-\n8.Any violation of rules will lead to disqualification. 
-\n9.Apart from these rules, additional rules will be disclosed on the spot. 
-\n10.The decision of the organizers is final and binding.</item>
-        <item >Kunal Pitale	 +91 9664127403 
-Suman Chauhan	 +91 8767392463</item>
-<item >For more information visit: http://technovanza.org/mission-sql.php</item>
+        <item>Coming Soon</item>
+        <item >Coming Soon</item>
+        <item >Yashodhan Gawde\n
+Rohan Dandekar</item>
+<item >Coming Soon</item>
     </string-array>
     
         <string-array name="ai_wars">
-        <item >Welcome to the war of Artificial Intelligence. Your aim- to write the ultimate survivor code with the highest winning 
-               probability! The AI should be able to receive the current state of the game and return the next move. Can your AI knock 
-               the rest out? 
+        <item >Coming Soon
          </item>
-        <item> 
- 				Round 1: Given the name and game play of a two player game, the participant has to code for one of the player in java and submit the code on or before the dead line given.
-
-\nRound 2: If there is a tie between codes of certain participants i.e. when their codes are being executed together and each time the result is a DRAW then there will be a TIE BREAKER between those participants. For this round a new two player game will be given to them.     
-    	</item>
-        <item >1.Participation is individual.
-\n2.Only one entry per participant per round will be entertained.
-\n3.You can make ONLY ONE SUBMISSION.
-\n4.Code should be in java language</item>
-        <item >Pooja Gogia	+91 9503893738
-Asha Patel	+91 9757348675</item>
-<item >For more information visit: http://technovanza.org/ai-wars.php</item>
+        <item> Coming Soon</item>
+        <item >Coming Soon </item>
+        <item >Coming Soon</item>
+<item >Coming Soon
+    Coming Soon</item>
     </string-array>
     
     <string-array name="codeswap">
-        <item >Completing your own code is simple; but completing someone elses code emm, not so easy. It 
-               takes talent, team work and trust in one another while juggling with the double edged sword. 
-               Swapping blades or swapping codes, one mistake can cost a lot. So face the most famous languages, 
-               java and C/C++, and take on the most unique team challenge; the challenge of Code-Swap. 
-         </item>
-        <item> 
- 			Round 1: Elimination Round. 
-
-\n1.Teams will be given a problem statement one for each Java and C language.
-\n2. Both members need to complete both the codes together as they are being swapped amongst each other after the completion a one line.
-\n3. The teams going for the next round or tie breaker round will be decided according to the Judging criteria’s.
-
-\nTie-Breaker round:
-\n1.Teams who have not been qualified for the second round but are qualified for the tie breaker will have to go through this round.
-\n2.Participants are required to give one more code swap round.
-\n3.This round will have some rules which will be given on the spot.
-\n4.Eligible participants not attending this round will be disqualified.
-\n5.The teams who qualify this round proceed in the next round.
-\n6.In case there is no tie in first round, this round won’t be conducted.
-\n7. In case again Tie in teams for such case Rules will be given on spot.
-
-\nRound 2: Finals
-\n1.This round will be similar to the 1st round.
-\n2. The problem statement would get difficult and new conditions will be imposed on the spot.
-\n3. The winner will be decided according to the Judging criteria.
-
-\nLife Line :- Each Team will be given Two Life Line which will be Declared on the spot. 
-    	</item>
-        <item >1. Code Swap is based on Java and C Programming language.
-\n2. It is a team event and each team will be of 3 members. With 2 members actively participating in Game and 1 as Substitute.
-\n3. The team cannot be changed after registration.
-\n4. Each person can register only once.
-\n5. The participants have to go through 2 rounds in Code Swap and a Tie Breaker round if they tie with someone.
-\n6. After receiving the Problem Statement the Members will not be allowed to discuss the approach to be followed.
-\n7. Use of comments and blank lines won’t be allowed while coding.
-\n8. Each Participant will write one line of code either in ‘C’ or ‘Java’ and will have to swap his line with his/her partner and will write the next line of code in other language and so on.
-\n9. Participants are not allowed to bring any media devices such as pen drives, CD, DVD etc.
-\n10. Cell phones must be switched off.
-\n11. All the stationery such as pen, paper etc. will be provided.
-\n12. Any violation of rule may lead to disqualification of your team.
-\n13. Apart from these Rules, some additional rules will be disclosed on the spot.
-\n14. The decision of the organizers is final and binding.</item>
-        <item >Vishal Asrani +91 814 979 1657
-Karan Bodhani +91 940 340 8997</item>
-<item >For more information visit: http://technovanza.org/codeswap.php</item>
+        <item >Talent wins games, but teamwork wins championships. So, test your skills of Java and C along with your partner in Code Swap
+event that involves lot of swapping and be Champions of coding world!!!
+ </item>
+        <item> Coming Soon</item>
+        <item >Coming Soon</item>
+        <item >Urmi Dabholkar\n
+Tejasvi</item>
+<item >Coming Soon</item>
     </string-array>
         
 	

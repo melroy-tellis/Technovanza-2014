@@ -3,8 +3,10 @@ package org.technovanza.technovanza14;
 import android.app.Fragment;
 import android.content.ClipData;
 import android.content.ClipDescription;
+import android.content.Context;
 import android.content.Intent;
 import android.content.ClipData.Item;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.DragEvent;
 import android.view.LayoutInflater;
@@ -81,13 +83,27 @@ public class TechnoTileFragment extends Fragment implements OnClickListener,OnLo
 				this.getActivity().startActivity(new Intent(this.getActivity(),StyledTabs_house.class));
 				break;
 			case R.id.facebook_frag:
-				this.getActivity().startActivity(new Intent(this.getActivity(),HelloFacebookSampleActivity.class));
+				
+				Intent facebookIntent = getOpenFacebookIntent(this.getActivity());
+				this.getActivity().startActivity(facebookIntent);
+				
+				//	startActivity(facebookIntent);			
+			//	this.getActivity().startActivity(new Intent(this.getActivity(),HelloFacebookSampleActivity.class));
 				break;
 		}
 		
 		
 		
 		
+	}
+	 public static Intent getOpenFacebookIntent(Context context) {
+
+		   try {
+		    context.getPackageManager().getPackageInfo("com.facebook.katana", 0);
+		    return new Intent(Intent.ACTION_VIEW, Uri.parse("fb://profile/136220994671"));
+		   } catch (Exception e) {
+		    return new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/136220994671"));
+		   }
 	}
 	@Override
 	public boolean onDrag(View view, DragEvent dragevent) {

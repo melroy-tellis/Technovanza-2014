@@ -84,6 +84,23 @@ int width;
    		return super.onOptionsItemSelected(item);
    	}
     */
+    @Override
+   	public boolean onOptionsItemSelected(MenuItem item) {
+   		// TODO Auto-generated method stub
+       	switch(item.getItemId()){
+       	case android.R.id.home:
+       		NavUtils.navigateUpFromSameTask(this);
+       		return true;
+       	case R.id.share:
+       		Intent intent = new Intent(Intent.ACTION_SEND);
+			intent.setType("text/plain");
+		//	intent.putExtra(Intent.EXTRA_TEXT, "I would like to recommend Restaurant "+info.get(4)+" . Must visit :)");
+			startActivity(Intent.createChooser(intent, "Share with"));	
+			return true;
+       	}
+   		return super.onOptionsItemSelected(item);
+   	}
+
     class EventsAdapter extends FragmentPagerAdapter {
         public EventsAdapter(FragmentManager fm) {
             super(fm);

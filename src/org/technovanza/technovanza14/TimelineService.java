@@ -1,25 +1,35 @@
 package org.technovanza.technovanza14;
 
 import java.util.List;
+
+import org.technovanza.technovanza14.NewsActivity.TwitterUpdateReceiver;
+
 import twitter4j.Status;
 import twitter4j.Twitter;
+import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
+import twitter4j.User;
+import twitter4j.auth.AccessToken;
 import twitter4j.conf.Configuration;
 import twitter4j.conf.ConfigurationBuilder;
 import android.app.Activity;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.app.ProgressDialog;
 import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.IBinder;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
+import android.widget.Toast;
 
 public class TimelineService extends Service {
 	
@@ -82,7 +92,10 @@ public class TimelineService extends Service {
 	    		technoTwitter = new TwitterFactory(twitConf).getInstance();
 	   	    		
 	    }
-	    else stopSelf();
+	    else
+	    {
+	    	stopSelf();
+	    }
 	    
 
 
@@ -94,6 +107,7 @@ public class TimelineService extends Service {
 		return null;
 	}
 	
+	
 	/**
 	 * TimelineUpdater class implements the runnable interface
 	 */
@@ -104,65 +118,15 @@ public class TimelineService extends Service {
 		public void run()
 		{
 		    //check for updates - assume none
-			boolean statusChanges = false;
 			try 
 			{	
-				Log.i("TimelineService", "Start downloading");
-				noOfNewTweets=technoTwitterPrefs.getInt("NO_OF_NEW_TWEETS", 0);
-			    //fetch timeline
-				 //retrieve the Technovanza timeline tweets as a list
-				List<Status> homeTimeline = technoTwitter.getUserTimeline("Technovanza");
-				Log.i("TimelineService", "Stop downloading");
-				//iterate through new status updates
-				for (Status statusUpdate : homeTimeline) 
-				{
-				    //call the getValues method of the data helper class, passing the new updates
-				    ContentValues timelineValues =  NewsTimelineDBHelper.getValues(statusUpdate);
-				    //if the database already contains the updates they will not be inserted
-				    timelineDB.insertOrThrow("home", null, timelineValues);
-				    //confirm we have new updates
-				    noOfNewTweets++;
-				    statusChanges = true;
-				}
-				
+				new GetTimeline().execute() ;
 			} 
 			catch (Exception te) 
 			{
 				Log.e(LOG_TAG, "Exception: " + te);
 			}
-		    //if we have new updates, send a Broadcast
-			if (statusChanges)	
-			{
-				SharedPreferences.Editor edit = technoTwitterPrefs.edit();
-        		edit.putInt("NO_OF_NEW_TWEETS", noOfNewTweets).commit();
-			    //this should be received in the main timeline class otherwise a push notification is displayed
-			    getApplicationContext().sendOrderedBroadcast(
-						new Intent("TWITTER_UPDATES"), 
-						null,
-						new BroadcastReceiver() {
-
-							@Override
-							public void onReceive(Context context, Intent intent) {
-
-								
-								final Intent restartNewsActivtyIntent = new Intent(getApplicationContext(),
-										NewsActivity.class);
-								restartNewsActivtyIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-								if (getResultCode()!=Activity.RESULT_OK)
-								{
-									final PendingIntent pendingIntent = PendingIntent.getActivity(context, getResultCode(), restartNewsActivtyIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-									NotificationCompat.Builder notification = new  NotificationCompat.Builder(getApplicationContext()).setSmallIcon(R.drawable.ic_launcher).setContentText(technoTwitterPrefs.getInt("NO_OF_NEW_TWEETS", 0)+" new tweets received").setContentTitle("TechnoTwitter").setAutoCancel(true).setContentIntent(pendingIntent);
-									NotificationManager newNotificationManager=(NotificationManager)getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
-									newNotificationManager.notify(1, notification.build());
-								}
-							}
-						}, 
-						null, 
-						0, 
-						null, 
-						null);
-			}
-		    //delay fetching new updates
+   		    //delay fetching new updates
 			timelineHandler.postDelayed(this, FETCH_DELAY);
 			
 			
@@ -188,6 +152,80 @@ public class TimelineService extends Service {
 	    //stop the updating
 	    timelineHandler.removeCallbacks(timelineUpdater);
 	    timelineDB.close();
+	}
+	private class GetTimeline extends AsyncTask<String, String, Boolean>
+	{
+			
+	        @Override
+	        protected Boolean doInBackground(String... args)
+	        {
+	        	try
+	        	{
+	        		Log.i("TimelineService", "Start downloading");
+					noOfNewTweets=technoTwitterPrefs.getInt("NO_OF_NEW_TWEETS", 0);
+				    //fetch timeline
+					//retrieve the Technovanza timeline tweets as a list
+					List<twitter4j.Status> homeTimeline = technoTwitter.getUserTimeline("Technovanza");
+					Log.i("TimelineService", "Stop downloading");
+					boolean statusChanges=false;
+					//iterate through new status updates
+					for (twitter4j.Status statusUpdate : homeTimeline) 
+					{
+					    //call the getValues method of the data helper class, passing the new updates
+					    ContentValues timelineValues =  NewsTimelineDBHelper.getValues(statusUpdate);
+					    //if the database already contains the updates they will not be inserted
+					    timelineDB.insertOrThrow("home", null, timelineValues);
+					    //confirm we have new updates
+					    noOfNewTweets++;
+					    statusChanges = true;
+					}
+					return statusChanges;				
+	        	}	
+	        	catch (TwitterException e)
+	        	{	        
+	        		e.printStackTrace();
+	        	}
+	            return false;
+	         }
+	         @Override
+	         protected void onPostExecute(Boolean response)
+	         {
+	            if(response)
+	            {
+	            	
+	            	SharedPreferences.Editor edit = technoTwitterPrefs.edit();
+	        		edit.putInt("NO_OF_NEW_TWEETS", noOfNewTweets).commit();
+				    //this should be received in the main timeline class otherwise a push notification is displayed
+				    getApplicationContext().sendOrderedBroadcast(
+							new Intent("TWITTER_UPDATES"), 
+							null,
+							new BroadcastReceiver() {
+
+								@Override
+								public void onReceive(Context context, Intent intent) {
+
+									
+									final Intent restartNewsActivtyIntent = new Intent(getApplicationContext(),
+											NewsActivity.class);
+									restartNewsActivtyIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+									if (getResultCode()!=Activity.RESULT_OK)
+									{
+										final PendingIntent pendingIntent = PendingIntent.getActivity(context, getResultCode(), restartNewsActivtyIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+										NotificationCompat.Builder notification = new  NotificationCompat.Builder(getApplicationContext()).setSmallIcon(R.drawable.ic_launcher).setContentText(technoTwitterPrefs.getInt("NO_OF_NEW_TWEETS", 0)+" new tweets received").setContentTitle("TechnoTwitter").setAutoCancel(true).setContentIntent(pendingIntent);
+										NotificationManager newNotificationManager=(NotificationManager)getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
+										newNotificationManager.notify(1, notification.build());
+									}
+								}
+							}, 
+							null, 
+							0, 
+							null, 
+							null);
+	                    
+	            }
+	          }
+	         
+	         
 	}
 
 }

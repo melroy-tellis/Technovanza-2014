@@ -327,7 +327,14 @@ public class NewsActivity extends Activity
 	{
 	    super.onDestroy();
 	    //Close the database
-	    timelineDB.close();
+	    try
+	    {
+	    	timelineDB.close();
+	    }
+	    catch(Exception e)
+	    {
+	    	Log.e("Twitter",e.getMessage());
+	    }
 	 }
 	
  }

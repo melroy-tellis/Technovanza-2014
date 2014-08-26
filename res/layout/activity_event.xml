@@ -8,7 +8,11 @@
          android:paddingRight="@dimen/activity_horizontal_margin"
          android:paddingTop="@dimen/activity_vertical_margin" 
           tools:context=".Activity1" 
-          android:id="@+id/rr">
+          android:id="@+id/rr"
+          android:background="@drawable/vrcro"
+          
+          
+          >
  <ImageButton
        android:id="@+id/iv1" 
       android:layout_width="80dp" 
@@ -27,14 +31,7 @@
       android:textColor="@color/abs__primary_text_holo_dark"
       android:textSize="25sp"
       android:textStyle="bold"
-       />
-  <Button 
-      android:id="@+id/btn1" 
-      android:layout_width="100dp" 
-      android:layout_height="wrap_content" 
-      android:layout_alignParentBottom="true" 
-      android:layout_centerHorizontal="true" 
-      android:text="Register" /> 
+       /> 
         
     <ExpandableListView 
         android:id="@+id/elv"
@@ -47,7 +44,23 @@
      >
         
     </ExpandableListView>
-  
- 
+
+    <ImageButton
+        android:id="@+id/sh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn1"
+        android:layout_alignBottom="@+id/btn1"
+        android:layout_alignRight="@+id/elv"
+        android:text=""
+        android:background="@drawable/share" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/iv1"
+        android:text="Register" />
     
   </RelativeLayout>

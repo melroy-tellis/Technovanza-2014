@@ -21,28 +21,33 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ExpandableListView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.actionbarsherlock.view.MenuItem;
 	public class TabFragment2 extends Fragment{
 		ImageButton ib;
 		TextView etv;
+		ImageButton share;
 		Button registerButton;
 		static int width;
+		String event;
 		static int x,y;
 		ProgressDialog pDialog;
 		JSONParser jsonParser=new JSONParser();
@@ -82,6 +87,12 @@ import android.widget.Toast;
 		String edata[];	
 		boolean flag=false; 
 		View myView;
+@Override
+public void onCreate(Bundle s)
+		{
+	super.onCreate(s);
+	setHasOptionsMenu(true);
+		}
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 						Bundle savedInstanceState) {
 			
@@ -129,6 +140,20 @@ import android.widget.Toast;
 				else {
 					myView = inflater.inflate(R.layout.activity_event, container,false);
 				}
+				share=(ImageButton)myView.findViewById(R.id.sh);
+				share.setOnClickListener(new OnClickListener() {
+					
+					@Override
+					public void onClick(View v) {
+						// TODO Auto-generated method stub
+						Intent intent = new Intent(Intent.ACTION_SEND);
+						intent.setType("text/plain");
+					intent.putExtra(Intent.EXTRA_TEXT, "I would like to recommend this event "+event+" . Must try :)");
+						startActivity(Intent.createChooser(intent, "Share with"));	
+				
+					}
+				});
+			
 				
 				ib=(ImageButton)myView.findViewById(R.id.iv1);
 			ib.setOnClickListener(imageButtonListener);
@@ -148,6 +173,7 @@ import android.widget.Toast;
 	 y = getArguments().getInt("position");
 	
 	etv.setText(Contents[x][y]);
+	event=Contents[x][y];
 	/*if(Arrays.asList(TeamEvents).contains(Contents[x][y])) {
 		teamEventToast();
 	}*/
@@ -162,13 +188,13 @@ import android.widget.Toast;
 			case 0:	{	//robowars
 				edata=getResources().getStringArray(R.array.robowars);
 				flag=true;
-				ib.setBackgroundResource(R.drawable.robowars);
+				ib.setBackgroundResource(R.drawable.robowars1);
 				currentEvent="robowars";
 				//teamEventToast();
 				break;
 				}
 		case 1:	{	//VCR
-			edata=getResources().getStringArray(R.array.VCR);
+			edata=getResources().getStringArray(R.array.VRC);
 			flag=true;
 			ib.setBackgroundResource(R.drawable.vrc);
 			currentEvent="robotics";
@@ -664,6 +690,27 @@ import android.widget.Toast;
 			 register.setText("Register");
 			 rl.addView(register);*/
 		 }
+		 @Override
+		 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+		 	   inflater.inflate(R.menu.main2, menu);
+		 }
+		 
+		 
+		 public boolean onOptionsItemSelected(MenuItem item) {
+		 	   // handle item selection
+		 	   switch (item.getItemId()) {
+		 	 	case R.id.share:
+		       		Intent intent = new Intent(Intent.ACTION_SEND);
+					intent.setType("text/plain");
+				intent.putExtra(Intent.EXTRA_TEXT, "I would like to recommend this event "+event+" . Must try :)");
+					startActivity(Intent.createChooser(intent, "Share with"));	
+					return true;
+		       	}
+		return true;
+		 	   // return super.onOptionsItemSelected(item);
+		 	   }
+		 
+	
 		 private boolean isTeamEvent(String eventName) {
 			 for(String eventArrayName:TeamEvents) {
 				 if (eventName.equalsIgnoreCase(eventArrayName)) {
@@ -716,6 +763,8 @@ import android.widget.Toast;
 				
 				d.show();
 	        }};
+	        
+	        
 	        class registerEventToDb extends AsyncTask<String, String, String> {
 				 
 		        /**
